@@ -1,0 +1,92 @@
+Tentar usar o rascal usando a versão Neon do Eclipse.
+
+Para a parte de transformação:
+    Clonar o URL apresentado
+    Ideal visitar o site do projeto -> Analisar os pull requests para saber em qual branch estão feitos os pull requests 
+    Fazer o pull request para o branch mais usado (master?)
+    Contar a quantidade de lnahs de código (cloc) => sudo apt-get install cloc
+        Olhar apenas as linahs de código fonte em java
+    Pegar a revisão
+        git rev-parse --verify HEAD
+
+    Criar arquivo csv (projetos.csv) -> pode possuir várias linhas a serem processadas
+    |Nome do projeto|código da revisão|qual a transformação|percentual|caminho do projeto, pwd|linhas de código fonte
+        Para comentar a linha (#)
+
+    Ex:
+        closure-compiler,aoisdhuahdausdh,FP,90,/home/alguma/coisa,561651
+
+    Executar rascal
+        import Driver;
+        refactorProjects(|project://rascal-Java8/projetos.csv|);
+
+    git para verificar o que foi alterado
+    fazer compilamento
+        mvn compile
+        se der erro no código, dar git checkout
+            ANOTAR O ERRO!
+         Mandar log do maven para o Uriel
+    fazer o pull request
+        git commit
+        
+
+
+    Cuidado com a transformação Func! Faz muitas travessias no código fonte. Não está otimizado
+
+
+
+####
+
+type DefrSub = [(Id, Value)]
+
+NÂO PRECISA MAIS DA FUNÇÂO DE SUBSTITUIÇÃO COMO EXISTIA ANTES
+
+
+let x = 10
+    in i { let y = 5
+        in let f = (\z. x + 2)   [1]
+            in let x = 20
+                in f (x + y) } => e3
+
+
+Escopo estático
+    Em [1] na nova linguagem
+
+interp e1 [] []
+
+Let x e2
+
+Closure é uma abstração lambda enriquecida do ambiente. Só faz sentido em abstração lambda
+Não precisa fazer para definiçã de função
+
+isso não é permitido
+def inc x = x + y (não é uma expressão!)
+
+let y = 10
+    in inc 5
+
+diferença entre uma expressão e um comando! Definição de função tem outros componentes 
+que não fazem parte de expressão. Assim definição de função é um comando e não retorna uma closure
+
+
+
+Não preciso montar um closure no let!
+interp (let x e2 e3) amb decs = 
+    let v = interp e2 amb decs
+        in interp e2 (x,v):amb decs
+
+montar o closure em:
+interp (lambda x e) amb decs = ?
+
+
+
+para let:
+let x = 3
+    in let x = 4
+        in x + x
+        => Deve voltar 8, por isso adiciona na cabeça da lista
+        [(x, 4),(x, 3)]
+
+
+
+

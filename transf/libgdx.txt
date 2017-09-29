@@ -1,0 +1,50 @@
+Mudança do source e target de 1.6 para 1.8
+
+Git checkout de diversos arquivos:
+gdx/src/com/badlogic/gdx/scenes/scene2d/ui/TextTooltip.java
+gdx/src/com/badlogic/gdx/scenes/scene2d/ui/Tree.java
+gdx/src/com/badlogic/gdx/scenes/scene2d/ui/Table.java
+gdx/src/com/badlogic/gdx/scenes/scene2d/ui/Value.java
+gdx/src/com/badlogic/gdx/scenes/scene2d/ui/TooltipManager.java
+gdx/src/com/badlogic/gdx/scenes/scene2d/utils/DragScrollListener.java
+backends/gdx-backend-lwjgl/src/com/badlogic/gdx/backends/lwjgl/LwjglAWTFrame.java
+
+[ERROR] /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-tools/src/com/badlogic/gdx/tools/particleeditor/GradientPanel.java:[88,20] error: incompatible types: GradientPanel.GradientEditor is not a functional interface
+
+[ERROR] /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/gdx/src/com/badlogic/gdx/scenes/scene2d/ui/TextTooltip.java:[53,11] error: no suitable method found for width((Actor con[...]h); })
+[ERROR] method Container.width(Value) is not applicable
+[ERROR] (argument mismatch; Value is not a functional interface)
+[ERROR] method Container.width(float) is not applicable
+[ERROR] (argument mismatch; float is not a functional interface)
+[ERROR] /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/gdx/src/com/badlogic/gdx/scenes/scene2d/ui/TooltipManager.java:[58,24] error: incompatible types: Task is not a functional ic class PreAlpha extends JFrame {
+
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile) on project gdx-tools: Compilation failure: Compilation failure:
+[ERROR] /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-tools/src/com/badlogic/gdx/tools/flame/PreAlpha.java:[46,20] error: incompatible types: WindowListener is not a functional interface
+[ERROR] multiple non-overriding abstract methods found in interface WindowListener
+
+
+        public PreAlpha () {
+                super("Premultiply alpha converter");
+-               addWindowListener(new WindowAdapter() {
+-                       public void windowClosed (WindowEvent event) {
+-                               System.exit(0);
+-                       }
+-               });
++               addWindowListener((WindowEvent event)->{ System.exit(0);});
+
+                initializeComponents();
+                pack();
+@@ -158,10 +154,6 @@ public class PreAlpha extends JFrame {
+                                break;
+                        }
+                }
+-               EventQueue.invokeLater(new Runnable() {
+-                       public void run () {
+-                               new PreAlpha();
+-                       }
+-               });
++               EventQueue.invokeLater(()-> { new PreAlpha();});
+        }
+ }
+nterface
+
