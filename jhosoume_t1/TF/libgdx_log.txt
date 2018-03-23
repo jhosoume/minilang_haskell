@@ -1,0 +1,16 @@
+[Project Analyzer] processing project: libgdx
+- applying aic into /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/gdx/src/com/badlogic/gdx/scenes/scene2d/ui/TextTooltip.java
+- applying aic into /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-tools/src/com/badlogic/gdx/tools/flame/EditorPanel.java
+- applying aic into /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-tools/src/com/badlogic/gdx/tools/flame/ScaledNumericPanel.java
+- applying aic into /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-tools/src/com/badlogic/gdx/tools/flame/DynamicsInfluencerPanel.java
+- applying aic into /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-tools/src/com/badlogic/gdx/tools/particleeditor/NumericPanel.java
+- applying aic into /home/jhosoume/unb/linguagens_programacao/t1/transf/libgdx/extensions/gdx-setup/src/com/badlogic/gdx/setup/ExternalExtensionsDialog.java
+- Number of files:  2170
+- Processed Files: 40
+- Exported Files:   24
+- Total of files changed: 143
+- Total of transformations: 174
+- Errors: 12
+- Final Time: 201709257001541
+- Elapsed Time: 143947.0ms
+

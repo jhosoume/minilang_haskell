@@ -1,0 +1,20 @@
+[Project Analyzer] processing project: realm-java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/androidTest/java/io/realm/OrderedRealmCollectionTests.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-annotations-processor/src/main/java/io/realm/processor/ModuleMetaData.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/main/java/io/realm/internal/RealmNotifier.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/objectServer/java/io/realm/internal/network/NetworkStateReceiver.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/androidTest/java/io/realm/RealmLinkTests.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyMediatorGenerator.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/objectServer/java/io/realm/PermissionManager.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/examples/newsreaderExample/src/main/java/io/realm/examples/newsreader/model/network/RealmListNYTimesMultimediumDeserializer.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/examples/unitTestExample/src/main/java/io/realm/examples/unittesting/ExampleActivity.java
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/realm-java/realm/realm-library/src/main/java/io/realm/internal/ObserverPairList.java
+- Number of files:  546
+- Processed Files: 19
+- Exported Files:   11
+- Total of files changed: 14
+- Total of transformations: 27
+- Errors: 38
+- Final Time: 201709257002911
+- Elapsed Time: 485412.0ms

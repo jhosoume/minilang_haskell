@@ -1,0 +1,9 @@
+[Project Analyzer] processing project: material-dialogs
+- Number of files:  36
+- Processed Files: 0
+- Exported Files:   0
+- Total of files changed: 0
+- Total of transformations: 0
+- Errors: 0
+- Final Time: 201709273024958
+- Elapsed Time: 3779.0ms

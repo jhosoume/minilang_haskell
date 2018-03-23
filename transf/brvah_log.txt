@@ -1,0 +1,9 @@
+[Project Analyzer] processing project: BaseRecyclerViewAdapterHelper
+- Number of files:  80
+- Processed Files: 0
+- Exported Files:   0
+- Total of files changed: 0
+- Total of transformations: 0
+- Errors: 0
+- Final Time: 201709257002106
+- Elapsed Time: 1658.0ms

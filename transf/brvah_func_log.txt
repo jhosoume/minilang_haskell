@@ -1,0 +1,10 @@
+[Project Analyzer] processing project: BaseRecyclerViewAdapterHelper
+- applying ForLoopToFunctional into /home/jhosoume/unb/linguagens_programacao/t1/transf/BaseRecyclerViewAdapterHelper/library/src/main/java/com/chad/library/adapter/base/listener/SimpleClickListener.java
+- Number of files:  80
+- Processed Files: 1
+- Exported Files:   1
+- Total of files changed: 3
+- Total of transformations: 3
+- Errors: 1
+- Final Time: 201709260203654
+- Elapsed Time: 44606.0ms
